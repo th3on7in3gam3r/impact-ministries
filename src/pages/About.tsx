@@ -114,8 +114,14 @@ export default function About() {
               <h3 className="font-playfair text-2xl font-bold text-church-gold mb-4">
                 Our Vision
               </h3>
+              <p className="font-playfair text-xl font-semibold text-stone-800 leading-relaxed mb-4">
+                We exist to impact lives with the gospel of Jesus Christ
+              </p>
               <p className="font-lato text-stone-600 leading-relaxed mb-4">
-                we exist to impact lives with the gospel of Jesus Christ
+                Our vision is to see men, women, and children encounter the living
+                God, be rooted in His Word, and grow into passionate followers of
+                Jesus. We long to build a church that not only gathers, but goes —
+                carrying the hope of the Gospel into homes, neighborhoods, and nations.
               </p>
               <p className="font-lato text-sm text-stone-500 italic leading-relaxed">
                 &ldquo;Therefore go and make disciples of all nations, baptizing them in
