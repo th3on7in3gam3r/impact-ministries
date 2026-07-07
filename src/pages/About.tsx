@@ -94,8 +94,18 @@ export default function About() {
               <h3 className="font-playfair text-2xl font-bold text-church-purple mb-4">
                 Our Mission
               </h3>
-              <p className="font-lato text-stone-600 leading-relaxed">
+              <p className="font-playfair text-xl font-semibold text-stone-800 leading-relaxed mb-4">
                 Imacted by God to reach others for Christ
+              </p>
+              <p className="font-lato text-stone-600 leading-relaxed mb-4">
+                We believe God transforms us first — and from that place of grace, we
+                are called to share His love with everyone around us. Through worship,
+                prayer, and the preaching of God&apos;s Word, we seek to lead people into
+                a life-changing relationship with Jesus.
+              </p>
+              <p className="font-lato text-stone-600 leading-relaxed">
+                Whether in Woburn or beyond, our heart is to serve, disciple, and
+                reach souls with the Gospel — making an impact, one life at a time.
               </p>
             </div>
           </AnimatedSection>
