@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { siteConfig, addressLines } from '../config/site'
+import { siteConfig, addressLines, pastor, images } from '../config/site'
 import {
   BookOpen,
   Cross,
@@ -136,8 +136,8 @@ export default function Home() {
         <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <AnimatedSection direction="left">
             <img
-              src="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=800&q=80"
-              alt="Congregation worshipping together"
+              src={images.church}
+              alt="Impact Ministries church in Woburn, MA"
               className="rounded-lg shadow-xl w-full h-80 lg:h-[28rem] object-cover hover:scale-[1.02] transition-transform duration-500"
             />
           </AnimatedSection>
@@ -231,6 +231,39 @@ export default function Home() {
           {events.map((event, i) => (
             <EventCard key={event.title} {...event} index={i} />
           ))}
+        </div>
+      </section>
+
+      <section className="py-20 px-4 bg-white border-t border-stone-100">
+        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+          <AnimatedSection direction="left">
+            <img
+              src={pastor.image}
+              alt={pastor.name}
+              className="w-56 h-56 rounded-full object-cover mx-auto shadow-xl border-4 border-church-gold"
+            />
+          </AnimatedSection>
+          <AnimatedSection direction="right" delay={0.15}>
+            <p className="font-lato text-church-purple text-xs uppercase tracking-[0.3em] mb-3">
+              Leadership
+            </p>
+            <h2 className="font-playfair text-3xl sm:text-4xl font-bold text-stone-900 mb-4">
+              Meet {pastor.name}
+            </h2>
+            <p className="font-lato text-stone-600 leading-relaxed mb-4">
+              With {pastor.yearsOfMinistry} years of faithful ministry, Pastor Robert
+              leads our church with a heart for the Gospel and a passion for reaching
+              lives for Christ. He and his wife, {pastor.wife}, have been married for{' '}
+              {pastor.yearsMarried} years and are raising three sons in the faith.
+            </p>
+            <Link
+              to="/about"
+              className="inline-block font-lato text-church-purple font-semibold hover:text-church-purple-light transition-colors"
+              aria-label="Learn more about Pastor Robert Lugoloobi"
+            >
+              Read Our Story →
+            </Link>
+          </AnimatedSection>
         </div>
       </section>
 

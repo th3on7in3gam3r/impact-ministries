@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from 'react'
 import { MapPin, Clock, Car, Accessibility } from 'lucide-react'
-import { siteConfig, addressLines } from '../config/site'
+import { siteConfig, addressLines, images } from '../config/site'
 import HeroSection from '../components/HeroSection'
 import { AnimatedSection } from '../components/AnimatedSection'
 
@@ -23,7 +23,7 @@ export default function FindUs() {
   return (
     <>
       <HeroSection
-        backgroundImage="https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1920&q=80"
+        backgroundImage={images.church}
         title="Find Us"
         subtitle="We'd love to see you. Here's how to get to Impact Ministries."
       />
