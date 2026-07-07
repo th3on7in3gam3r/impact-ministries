@@ -95,7 +95,7 @@ export default function About() {
                 Our Mission
               </h3>
               <p className="font-playfair text-xl font-semibold text-stone-800 leading-relaxed mb-4">
-                Imacted by God to reach others for Christ
+                Impacted by God to reach others for Christ
               </p>
               <p className="font-lato text-stone-600 leading-relaxed mb-4">
                 We believe God transforms us first — and from that place of grace, we
