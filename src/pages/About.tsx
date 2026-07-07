@@ -36,7 +36,7 @@ export default function About() {
   return (
     <>
       <HeroSection
-        backgroundImage={images.church}
+        backgroundImage="https://images.unsplash.com/photo-1504052434569-70ad5836ab65?w=1920&q=80"
         title="About Us"
         subtitle="Discover the heart and mission behind Impact Ministries International Inc."
       />
