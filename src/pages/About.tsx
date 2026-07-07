@@ -114,7 +114,7 @@ export default function About() {
               <h3 className="font-playfair text-2xl font-bold text-church-gold mb-4">
                 Our Vision
               </h3>
-              <p className="font-playfair text-xl font-semibold text-stone-800 leading-relaxed mb-4">
+              <p className="font-playfair text-xl font-semibold text-stone-800 leading-relaxed mb-4 sm:text-[clamp(0.9rem,1.9vw,1.1rem)] sm:whitespace-nowrap">
                 We exist to impact lives with the gospel of Jesus Christ
               </p>
               <p className="font-lato text-stone-600 leading-relaxed mb-4">
