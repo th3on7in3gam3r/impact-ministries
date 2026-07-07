@@ -95,7 +95,7 @@ export default function About() {
                 Our Mission
               </h3>
               <p className="font-lato text-stone-600 leading-relaxed">
-                Imacted by God to rech others for Christ
+                Imacted by God to reach others for Christ
               </p>
             </div>
           </AnimatedSection>
