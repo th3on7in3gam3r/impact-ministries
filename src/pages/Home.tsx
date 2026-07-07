@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
+import { siteConfig, addressLines } from '../config/site'
 import {
   BookOpen,
   Cross,
@@ -95,7 +96,7 @@ export default function Home() {
         title="Impact Ministries"
         scriptTitle="International Inc."
         tagline="Making an Impact, One Life at a Time"
-        location="JOIN US EVERY SUNDAY · Your City, ST"
+        location={`JOIN US EVERY SUNDAY · ${siteConfig.address.city}, ${siteConfig.address.state}`}
         fullHeight
         showCTAs
       />
@@ -268,31 +269,31 @@ export default function Home() {
             <MapPin className="w-8 h-8 text-church-purple mb-3" />
             <p className="font-lato text-stone-800 font-semibold mb-1">Location</p>
             <p className="font-lato text-stone-600 text-sm">
-              123 Faith Avenue
+              {addressLines[0]}
               <br />
-              Your City, ST 12345
+              {addressLines[1]}
             </p>
           </div>
           <div className="flex flex-col items-center">
             <Phone className="w-8 h-8 text-church-purple mb-3" />
             <p className="font-lato text-stone-800 font-semibold mb-1">Phone</p>
             <a
-              href="tel:+15551234567"
+              href={`tel:${siteConfig.phoneTel}`}
               className="font-lato text-stone-600 text-sm hover:text-church-purple transition-colors"
               aria-label="Call Impact Ministries"
             >
-              (555) 123-4567
+              {siteConfig.phone}
             </a>
           </div>
           <div className="flex flex-col items-center">
             <Mail className="w-8 h-8 text-church-purple mb-3" />
             <p className="font-lato text-stone-800 font-semibold mb-1">Email</p>
             <a
-              href="mailto:info@impactministries.org"
+              href={`mailto:${siteConfig.email}`}
               className="font-lato text-stone-600 text-sm hover:text-church-purple transition-colors"
               aria-label="Email Impact Ministries"
             >
-              info@impactministries.org
+              {siteConfig.email}
             </a>
           </div>
         </div>

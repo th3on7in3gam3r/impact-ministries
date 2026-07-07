@@ -1,8 +1,10 @@
+import { Play } from 'lucide-react'
 import HeroSection from '../components/HeroSection'
 import ServiceCard from '../components/ServiceCard'
 import EventCard from '../components/EventCard'
 import { AnimatedSection, staggerContainer, staggerItem } from '../components/AnimatedSection'
 import { motion } from 'framer-motion'
+import { siteConfig } from '../config/site'
 
 const detailedServices = [
   {
@@ -101,15 +103,28 @@ export default function Services() {
               or watch past messages on our YouTube channel.
             </p>
           </div>
-          <div className="aspect-video bg-stone-200 rounded-lg overflow-hidden shadow-lg">
-            <iframe
-              className="w-full h-full"
-              src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-              title="Impact Ministries Online Service"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            />
-          </div>
+          <a
+            href={siteConfig.youtube}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block aspect-video bg-church-purple-dark rounded-lg overflow-hidden shadow-lg group relative"
+            aria-label="Watch Impact Ministries on YouTube"
+          >
+            <div className="absolute inset-0 flex flex-col items-center justify-center text-white p-8 text-center">
+              <div className="w-20 h-20 rounded-full bg-red-600 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <Play className="w-10 h-10 text-white fill-white ml-1" />
+              </div>
+              <h3 className="font-playfair text-2xl font-bold mb-2">
+                Impact Ministries International
+              </h3>
+              <p className="font-lato text-white/80 text-sm">
+                Watch sermons, worship, and messages on our YouTube channel
+              </p>
+              <span className="mt-6 font-lato text-church-gold text-sm uppercase tracking-wider font-semibold group-hover:underline">
+                Visit Our Channel →
+              </span>
+            </div>
+          </a>
         </div>
       </AnimatedSection>
 

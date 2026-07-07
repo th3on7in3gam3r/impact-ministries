@@ -1,6 +1,7 @@
 import { useState, type FormEvent } from 'react'
 import { ChevronDown, MapPin, Clock, DoorOpen, Coffee, Users } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
+import { addressLines } from '../config/site'
 import HeroSection from '../components/HeroSection'
 import { AnimatedSection, staggerContainer, staggerItem } from '../components/AnimatedSection'
 
@@ -211,9 +212,9 @@ export default function PlanAVisit() {
                 <div>
                   <p className="font-lato font-semibold text-stone-900">Address</p>
                   <p className="font-lato text-stone-600">
-                    123 Faith Avenue
+                    {addressLines[0]}
                     <br />
-                    Your City, ST 12345
+                    {addressLines[1]}
                   </p>
                 </div>
               </div>
